@@ -6,7 +6,7 @@
 package handlers
 
 import (
-	pb "pb/comments"
+	pb "books/pb/comments"
 )
 
 // Post implements Service.
