@@ -1,0 +1,26 @@
+settings:
+  legacy:
+    force: false
+    interval: 0s
+server:
+    status: false
+    open: false
+    prot: 0
+    host: ""
+schema:
+- name: comments
+  path: ./cmd/comments-server
+  commands: 
+    install:
+        status: true
+    run:
+        status: true
+  watcher:
+    extensions:
+    - go
+    paths:
+    - ../../
+    ignored_paths:
+    - .git
+    - .realize
+    - vendor
