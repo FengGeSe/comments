@@ -84,3 +84,28 @@
 ├── .gitignore //git忽略规则文件
 └── .env //项目运行环境变量
 ```
+
+# 使用
+* 安装 [realize](https://github.com/oxequa/realize)
+```
+$ go get github.com/oxequa/realize
+```
+* 启动服务(会监听项目目录下的文件改动，重启服务)
+```
+$ realize start
+```
+* 普通方式启动服务
+```
+$ go run cmd/comments-server/main.go
+```
+
+* http测试
+```
+$ curl "http://localhost:5001/v1/detail?id=1"
+```
+* grpc测试
+```
+$ go run  cmd/comments/main.go get -id 1
+```
+
+
