@@ -24,14 +24,6 @@ zipkin:
     batch_size: 1000
     batch_interval: 3
     max_backlog: 10000
-    #http_server:
-    #  addr: :5011
-    #grpc_server:
-    #  addr: :5012
-    #debug_server:
-    #  addr: :5013
-    #metrics_server:
-    #  addr: :5014
 http_server:
   addr: :5001
 grpc_server:

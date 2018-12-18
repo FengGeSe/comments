@@ -17,7 +17,7 @@ WORKDIR ${WORKSPACE}
 COPY . .
 
 # 编译
-RUN go build -o ${MODULE} ${BUILDPATH} && echo $PATH
+RUN go build -o ${MODULE} ${BUILDPATH}
 
 # 端口
 EXPOSE 5001
