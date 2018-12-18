@@ -86,24 +86,24 @@
 ```
 
 # 使用
-< 安装 [realize](https://github.com/oxequa/realize)
+> 安装 [realize](https://github.com/oxequa/realize)
 ```
 $ go get github.com/oxequa/realize
 ```
-< 启动服务(会监听项目目录下的文件改动，重启服务)
+> 启动服务(会监听项目目录下的文件改动，重启服务)
 ```
 $ realize start
 ```
-< 普通方式启动服务
+> 普通方式启动服务
 ```
 $ go run cmd/comments-server/main.go
 ```
 
-< http测试
+> http测试
 ```
 $ curl "http://localhost:5001/v1/detail?id=1"
 ```
-< grpc测试
+> grpc测试
 ```
 $ go run  cmd/comments/main.go get -id 1
 ```
@@ -116,7 +116,7 @@ $ open http://localhost:5003/debug/pprof/profile
 $ open http://localhost:5003/debug/pprof/symbol
 $ open http://localhost:5003/debug/pprof/trace
 ```
-< 实时化图表信息
+> 实时化图表信息
 ```
 $ open http://127.0.0.1:5003/debug/charts/
 ```
