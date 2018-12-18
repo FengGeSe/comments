@@ -20,10 +20,10 @@ import (
 	"github.com/pkg/errors"
 
 	// This Service
-	pb "comments/pb/comments"
-	handlers "comments/svc/client/cli/handlers"
-	grpcclient "comments/svc/client/grpc"
-	httpclient "comments/svc/client/http"
+	pb "myservices/comments/pb/comments"
+	handlers "myservices/comments/svc/client/cli/handlers"
+	grpcclient "myservices/comments/svc/client/grpc"
+	httpclient "myservices/comments/svc/client/http"
 )
 
 var (

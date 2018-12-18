@@ -25,7 +25,7 @@ import (
 	"github.com/pkg/errors"
 
 	// This service
-	pb "comments/pb/comments"
+	pb "myservices/comments/pb/comments"
 )
 
 const contentType = "application/json; charset=utf-8"

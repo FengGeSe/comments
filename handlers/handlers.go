@@ -3,11 +3,11 @@ package handlers
 import (
 	"context"
 
-	global "comments/global"
-	models "comments/models"
-	pb "comments/pb/comments"
 	"fmt"
 	"github.com/pquerna/ffjson/ffjson"
+	global "myservices/comments/global"
+	models "myservices/comments/models"
+	pb "myservices/comments/pb/comments"
 	"time"
 )
 

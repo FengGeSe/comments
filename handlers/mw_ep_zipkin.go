@@ -1,13 +1,13 @@
 package handlers
 
 import (
-	global "comments/global"
 	"context"
 	"github.com/go-kit/kit/endpoint"
 	zipkingo "github.com/openzipkin/zipkin-go"
 	"github.com/openzipkin/zipkin-go/model"
 	"github.com/openzipkin/zipkin-go/propagation/b3"
 	"google.golang.org/grpc/metadata"
+	global "myservices/comments/global"
 	"time"
 )
 

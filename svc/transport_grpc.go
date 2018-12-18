@@ -17,7 +17,7 @@ import (
 	grpctransport "github.com/go-kit/kit/transport/grpc"
 
 	// This Service
-	pb "comments/pb/comments"
+	pb "myservices/comments/pb/comments"
 )
 
 // MakeGRPCServer makes a set of endpoints available as a gRPC BookCommentsServer.

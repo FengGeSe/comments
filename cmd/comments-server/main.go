@@ -2,9 +2,9 @@ package main
 
 import (
 	// This Service
-	global "comments/global"
-	lib "comments/lib"
-	server "comments/svc/server"
+	global "myservices/comments/global"
+	lib "myservices/comments/lib"
+	server "myservices/comments/svc/server"
 )
 
 func main() {

@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	pb "comments/pb/comments"
-	svc "comments/svc"
+	pb "myservices/comments/pb/comments"
+	svc "myservices/comments/svc"
 )
 
 // WrapEndpoints accepts the service's entire collection of endpoints, so that a

@@ -1,9 +1,9 @@
 package handlers
 
 import (
-	global "comments/global"
 	"context"
 	"github.com/go-kit/kit/endpoint"
+	global "myservices/comments/global"
 	"time"
 )
 

@@ -1,9 +1,9 @@
 package handlers
 
 import (
-	global "comments/global"
-	pb "comments/pb/comments"
 	"context"
+	global "myservices/comments/global"
+	pb "myservices/comments/pb/comments"
 	"time"
 )
 

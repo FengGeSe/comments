@@ -1,8 +1,8 @@
 package global
 
 import (
-	models "comments/models"
 	"github.com/openzipkin/zipkin-go/reporter"
+	models "myservices/comments/models"
 )
 
 var Logger logger
