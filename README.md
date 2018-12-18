@@ -52,34 +52,35 @@
 |   ├── pid.go //记录运行时服务pid
 |   ├── redis.go //redis相关
 |   └── zipkin.go //zipkin相关
-
-
-
-|   ├── handlers //业务逻辑目录
-|   |   ├── handlers.go //最终服务实现入口文件
-|   |   ├── hooks.go //钩子(graceful在此实现)
-|   |   ├── middlewares.go //中间件加载文件
-|   |   ├── mw_ep_name... //endpoint类型中间件
-|   |   └── mw_svc_name... //svc类型中间件
-|   ├── models //数据模型
-|   |   ├── migrate.go //数据库迁移文件
-|   |   ├── modelname.go //模型文件
-|   |   └── ... //模型文件
-|   ├── runtime //保存程序运行时数据
-|   |   ├── pid //服务运行pid
-|   |   ├── logs //日志保存目录
-|   |   └── ... //其他运行时数据
-|   ├── svc
-|   |   ├── client //服务访问相关
-|   |   |   ├── cli //命令行方式
-|   |   |   ├── grpc //grpc方式
-|   |   |   └── http //http方式
-|   |   ├── server //服务启动相关
-|   |   |   └── run.go //服务启动逻辑
-|   |   ├── endpoints.go //endpoints实现
-|   |   ├── transport_grpc.go //transport grpc实现
-|   |   └── transport_http.go //transport http实现
-|   ├── .realize.yaml //实时自动编译配置文件
-|   └── .env //项目运行环境变量
-└── book-servername ... //其他服务,目录结构相同
+├── handlers //业务逻辑目录
+|   ├── handlers.go //最终服务实现入口文件
+|   ├── hooks.go //钩子(graceful在此实现)
+|   ├── middlewares.go //中间件加载文件
+|   ├── mw_ep_name... //endpoint类型中间件
+|   └── mw_svc_name... //svc类型中间件
+├── lib //工具目录
+|   ├── pid.go //生成pid
+├── models //数据模型
+|   ├── migrate.go //数据库迁移文件
+|   ├── modelname.go //模型文件
+|   └── ... //模型文件
+├── pb //pb文件保存目录
+├── runtime //保存程序运行时数据
+|   ├── pid //服务运行pid
+|   ├── logs //日志保存目录
+|   └── ... //其他运行时数据
+├── svc
+|   ├── client //服务访问相关
+|   |   ├── cli //命令行方式
+|   |   ├── grpc //grpc方式
+|   |   └── http //http方式
+|   ├── server //服务启动相关
+|   |   └── run.go //服务启动逻辑
+|   ├── endpoints.go //endpoints实现
+|   ├── transport_grpc.go //transport grpc实现
+|   └── transport_http.go //transport http实现
+├── vendor   // 第三方依赖
+├── .realize.yaml //实时自动编译配置文件
+├── .gitignore //git忽略规则文件
+└── .env //项目运行环境变量
 ```
