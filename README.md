@@ -107,5 +107,20 @@ $ curl "http://localhost:5001/v1/detail?id=1"
 ```
 $ go run  cmd/comments/main.go get -id 1
 ```
+# 监控信息
+> 常规debug信息
+```
+$ open http://localhost:5003/debug/pprof/
+$ open http://localhost:5003/debug/pprof/cmdline
+$ open http://localhost:5003/debug/pprof/profile
+$ open http://localhost:5003/debug/pprof/symbol
+$ open http://localhost:5003/debug/pprof/trace
+```
+* 实时化图表信息
+```
+$ open http://127.0.0.1:5003/debug/charts/
+```
+
+
 
 
